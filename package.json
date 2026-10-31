@@ -1,0 +1,20 @@
+{
+  "name": "imovies-movie-ticket-booking",
+  "version": "1.0.0",
+  "description": "Full-Stack MERN Movie Ticket Booking Platform",
+  "scripts": {
+    "dev:backend": "npm.cmd --prefix backend run dev",
+    "dev:frontend": "npm.cmd --prefix frontend run dev",
+    "seed": "node backend/seed.js",
+    "build:frontend": "npm.cmd --prefix frontend run build"
+  },
+  "keywords": [
+    "mern",
+    "movie-ticket-booking",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,110 @@
+/* Cinevo Animations & Micro-interactions (Light Theme) */
+
+@keyframes pulseGlowLight {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(225, 29, 72, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(225, 29, 72, 0.45);
+  }
+}
+
+.glow-animation {
+  animation: pulseGlowLight 3s infinite ease-in-out;
+}
+
+/* Modal Backdrop Blur */
+.modal-backdrop-blur {
+  backdrop-filter: blur(6px);
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+/* Star Rating */
+.star-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.star-btn:hover, .star-btn.active {
+  color: #f59e0b;
+  transform: scale(1.2);
+}
+
+/* City Select Dropdown item */
+.city-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+  color: #334155;
+}
+
+.city-item:hover, .city-item.active {
+  background: #ffe4e6;
+  color: #e11d48;
+}
+
+/* Search Dropdown Popover */
+.search-results-popover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  z-index: 1050;
+  max-height: 420px;
+  overflow-y: auto;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 35px -5px rgba(0, 0, 0, 0.12), 0 10px 15px -5px rgba(0, 0, 0, 0.05);
+}
+
+.search-item {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item:hover {
+  background: #fff1f2;
+}
+
+/* Carousel controls */
+.hero-carousel-nav {
+  position: absolute;
+  bottom: 24px;
+  right: 36px;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-dot.active {
+  width: 28px;
+  background: #e11d48;
+  box-shadow: 0 0 10px #e11d48;
+}
